@@ -1,0 +1,22 @@
+# python
+__pycache__
+.venv
+
+# emacs
+*~
+
+# static js
+assets/static/js
+assets/static/css
+
+# Tests
+tests/venv
+
+# Build
+public
+
+# Hugo
+resources/_gen
+
+# macOS
+.DS_Store
