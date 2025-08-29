@@ -1,0 +1,83 @@
+body
+  font-family: $font-family
+  font-size: $font-size-base
+  line-height: 1.5em
+  padding: 24px
+  background-color: var(--background-color)
+  color: var(--text-color)
+
+.center
+  margin: 0 auto
+  max-width: 920px
+
+a
+  text-decoration: underilne
+  color: var(--highlight-color)
+
+  &.no-underline
+    text-decoration: none
+
+hr
+  border: 0px
+  margin: 1em 0 1em 0
+  border-top: #CCC 1px solid
+
+p:first-child
+  margin-top: 0
+
+.text-left
+  text-align: left
+
+.text-center
+  text-align: center
+
+.text-right
+  text-align: right
+
+.text-bold
+  font-weight: bold
+
+.text-size-small
+  font-size: $font-size-small
+
+.text-size-base
+  font-size: $font-size-base
+
+.text-size-normal
+  font-size: $font-size-normal
+
+.text-size-enormous
+  font-size: $font-size-enormous
+
+.float-right
+  float: right
+
+.float-left
+  float: left
+
+.clearfloat
+  clear: both
+
+.display-block
+  display: block
+
+.block-info
+  background-color: lighten($highlight-color, 40%)
+  padding: 12px
+
+// New
+.page-content
+  margin: 0 auto
+  flex-direction: row
+  max-width: 980px
+
+  @media ($tablet)
+    display: block
+    width: 100%
+
+*:target
+  background-color: lighten($highlight-color, 40%)
+
+footer
+  text-align: center
+  font-size: 0.8em

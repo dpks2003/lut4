@@ -1,0 +1,13 @@
+name = 'fmartingr.com'
+license = 'GPLv2'
+licenselink = 'https://github.com/fmartingr/fmartingr.com/LICENSE'
+description = 'Personal blog theme for my site'
+
+homepage = 'https://git.nakama.town/fmartingr/fmartingr.com/themes/fmartingr'
+
+tags = ['blog', 'company']
+features = ['some', 'awesome', 'features']
+
+[author]
+name = 'Felipe Martin'
+homepage = 'https://fmartingr.com'

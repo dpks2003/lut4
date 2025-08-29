@@ -1,0 +1,17 @@
+{{ define "main" }}
+<article class="{{ .Params.site_style.container_class | default ($.Param "site_style.container_class") }}">
+  <h1 class="title">{{ .Title }}</h1>
+
+  {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+  {{ $dateHuman := .Date | time.Format ":date_long" }}
+  {{ if strings.Contains .Section "blog" }}
+  <div class="info">
+      {{ partial "svg/calendar-event.svg" (dict "size" 24) }}
+      <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+      <div>{{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}</div>
+  </div>
+  {{ end }}
+
+  <div class="content">{{ .Content }}</div>
+</article>
+{{ end }}

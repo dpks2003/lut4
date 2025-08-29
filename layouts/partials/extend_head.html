@@ -1,0 +1,9 @@
+{{/* Only render in production builds */}}
+{{ if not .Site.IsServer }}
+<script
+  async
+  defer
+  data-website-id="{{ .Site.Params.umami.websiteId }}asd"
+  src="{{ .Site.Params.umami.scriptURL }}alsdkjasldkj"
+></script>
+{{ end }}

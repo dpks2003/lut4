@@ -1,0 +1,62 @@
+baseURL = 'https://lut4.com/'
+languageCode = 'en-us'
+title = 'Deepak Sharda'
+theme = ["fmartingr"]
+
+[params.umami]
+script_url = "https://umami.fmartingr.dev/script.js"
+website_id = "18da78a4-f6bd-4560-88fd-e28ca0b487fa"
+
+[params.site_style]
+container_class = "center"
+
+[params.hugomods.images]
+modern_format = "jpeg"
+
+[imaging]
+quality = 100
+resampleFilter = "Lanczos"
+
+[imaging.exif]
+disableDate = true
+disableLatLong = true
+
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.highlight]
+codeFences = true
+guessSyntax = true
+lineNos = true
+style = "dracula"
+
+[menus]
+[[menus.main]]
+name = 'Home'
+pageRef = '/'
+weight = 10
+[[menus.main]]
+name = 'Blog'
+pageRef = '/blog'
+weight = 20
+[[menus.main]]
+name = 'Projects'
+pageRef = '/projects'
+weight = 30
+# [[menus.main]]
+# name = 'Now'
+# pageRef = '/now'
+# weight = 30
+[[menus.main]]
+name = 'About'
+pageRef = '/about'
+weight = 40
+
+  [[module.imports]]
+  path = "github.com/hugomods/images"
+
+[[module.mounts]]
+source = "content"
+target = "content"

@@ -1,0 +1,93 @@
+
+header
+    display: flex
+    text-align: left
+    line-height: 1.5em
+    padding-bottom: 24px
+
+    .title
+        flex-grow: 1
+        flex-shrink: 1
+
+        *
+            vertical-align: middle
+
+        h1
+            display: inline
+            margin: auto
+            font-size: 1.5em
+
+        .avatar
+            display: inline-block
+            width: 32px
+            border-radius: 12%
+
+    nav
+        flex-grow: 1
+        text-align: right
+
+        ul
+            padding: 0
+            margin: 0
+            transition: display 1s
+
+            li
+                display: inline-block
+                padding-left: 16px
+                vertical-align: middle
+
+        .active, .ancestor
+            font-weight: bold
+
+    .menu-button-toggle-label
+        position: absolute
+        top: 0
+        right: 0
+        height: 1.5em
+
+        svg
+            cursor: pointer
+            vertical-align: middle
+
+    #menu-button-toggle
+        display: none
+
+        &:checked + label
+            .open-button
+                display: none
+
+            .close-button
+                display: block
+
+        &:not(:checked) + label
+            .open-button
+                display: block
+
+            .close-button
+                display: none
+
+@media ($until-mobile)
+    .menu-button-toggle-label
+        display: none
+
+@media ($mobile)
+    #menu-button-toggle:checked ~ .main-menu
+        display: block
+
+    header
+        display: block
+        position: relative
+
+        nav
+            width: 100%
+
+            ul
+                display: none
+                text-align: center
+                padding-top: 10px
+
+                li
+                    border-top: 1px solid #CCC
+                    padding: 10px
+                    font-size: 1.5em
+                    display: block

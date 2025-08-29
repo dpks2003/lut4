@@ -1,0 +1,32 @@
+// Theme
+// Light theme
+$highlight-color: #F04A00
+$text-color: #111
+$background-color: #fff
+$background-color-odd: darken($background-color, 5%)
+
+// Dark theme
+$highlight-color-dark: darken($highlight-color, 5%)
+$text-color-dark: #ddd
+$background-color-dark: #222
+$background-color-odd-dark: darken($background-color-dark, 5%)
+
+// Fonts
+$font-family: "Anonymous Pro", Menlo, Monaco, "Courier New", monospace
+$font-size-small: 0.8em
+$font-size-base: 1.0em
+$font-size-normal: 1.3em
+$font-size-enormous: 5em
+
+\:root
+    --background-color: #{$background-color}
+    --text-color: #{$text-color}
+    --highlight-color: #{$highlight-color}
+    --background-color-odd: #{$background-color-odd}
+
+@media (prefers-color-scheme: dark)
+    \:root
+        --background-color: #{$background-color-dark}
+        --text-color: #{$text-color-dark}
+        --highlight-color: #{$highlight-color-dark}
+        --background-color-odd: #{$background-color-odd-dark}

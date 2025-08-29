@@ -1,0 +1,21 @@
+/* Spoiler tag */
+
+img.spoiler {
+    filter: blur(25px);
+    transition-property: -webkit-filter;
+    transition-duration: .2s;
+}
+
+div.spoiler,
+span.spoiler,
+section.spoiler,
+p.spoiler {
+    filter: blur(5px);
+    transition-property: -webkit-filter;
+    transition-duration: .2s;
+}
+
+.spoiler:hover,
+.spoiler:focus {
+    filter: blur(0px);
+}

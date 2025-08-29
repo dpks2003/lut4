@@ -1,0 +1,99 @@
+div.article, main.blog, main.projects
+  .title
+    margin-bottom: 0.3em
+
+  &.future-post
+    border: 2px solid orange
+    border-radius: 8px
+    padding: 10px
+    margin-bottom: 15px
+
+  .info
+    *
+      vertical-align: middle
+
+    .Tags
+      ul
+        display: inline-block
+        margin: 0
+        padding: 0
+        list-style: none
+
+        li
+          display: inline
+          margin-right: 0.5em
+
+  .content
+    margin-top: 1em
+    text-align: justify
+
+    img
+      border-radius: 6px
+      display: block
+      margin: 0 auto
+      max-width: 100%
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2)
+
+    figcaption
+      font-style: italic;
+      font-size: 0.8em
+      text-align: center
+
+    video, img
+      max-width: 100%
+
+    li > p
+      margin: 0
+
+    li
+      margin-bottom: 1em
+
+    .highlight
+      pre
+        margin: 0
+
+blockquote
+  display: block
+  background: #eee
+  font-style: italic
+  padding: 15px 20px 15px 20px
+  font-family: Georgia, serif
+  color: #666
+  text-align: justify
+
+  p
+    margin: 0
+
+kbd
+  padding: 0.1em 0.6em
+  border: 1px solid #ccc
+  font-size: 11px
+  font-family: Arial,Helvetica,sans-serif
+  background-color: #f7f7f7
+  color: #333
+  -moz-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #ffffff inset
+  -webkit-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #ffffff inset
+  box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #ffffff inset
+  -moz-border-radius: 3px
+  -webkit-border-radius: 3px
+  border-radius: 3px
+  display: inline-block
+  margin: 0 0.1em
+  text-shadow: 0 1px 0 #fff
+  line-height: 1.4
+  white-space: nowrap
+
+// Spoiler tag
+
+img.spoiler // Images
+  filter: blur(25px)
+  transition-property: -webkit-filter
+  transition-duration: .2s
+
+div.spoiler, span.spoiler, section.spoiler, p.spoiler // Text
+  filter: blur(5px)
+  transition-property: -webkit-filter
+  transition-duration: .2s
+
+.spoiler:hover, .spoiler:focus
+  filter: blur(0px)

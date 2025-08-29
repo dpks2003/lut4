@@ -1,0 +1,21 @@
+{{ define "main" }}
+  <div class="center">
+    <h1 class="title">{{ .Title }}</h1>
+    {{ .Content }}
+    {{ range .Pages }}
+    <div class="artitle {{ $.Param "site_style.container_class" }}">
+        <h2 id="{{ .Title | urlize }}" class="title">{{ .LinkTitle }}</h2>
+        <div class="info">
+        {{ partial "svg/brand-git.svg" (dict "size" 24) }}
+        <span>
+            <a href="{{ .Param "repository" }}">{{ .Param "repository" }}</a>
+        </span>
+        </div>
+        <div class="summary content">{{ .Summary }}</div>
+    </div>
+    {{ end }}
+    <div class="center text-center">
+        {{ partial "pagination" . }}
+    </div>
+  </div>
+{{ end }}

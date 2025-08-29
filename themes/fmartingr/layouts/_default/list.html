@@ -1,0 +1,21 @@
+{{ define "main" }}
+  {{ if ne .Title "Blogs" }}<h1>{{ .Title }}</h1>{{ end }}
+  {{ .Content }}
+  {{ range (.Paginate .Pages 7).Pages }}
+  <div class="article {{ $.Param "site_style.container_class" }}{{ if gt .Date.Unix now.Unix }} future-post{{ end }}">
+    <h2 class="title"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+    <div class="info">
+      {{ partial "svg/calendar-event.svg" (dict "size" 24) }}
+      <span>{{ .Date.Format "January 2, 2006" }}</span>
+    </div>
+    <div class="summary content">{{ .Summary }}</div>
+    {{- if .Truncated -}}
+    <p class="text-right"><a href="{{ .RelPermalink }}">Read more &raquo;</a></p>
+    {{- end -}}
+  </div>
+  {{ end }}
+  <div class="center text-center">
+    {{ partial "pagination" . }}
+  </div>
+
+{{ end }}
