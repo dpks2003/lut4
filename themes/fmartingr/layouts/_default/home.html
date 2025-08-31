@@ -1,11 +1,17 @@
 {{ define "main" }}
 <div class="home center">
-    <h1 class="title">Hello I am Deepak Sharda </h1>
-    {{ with site.GetPage "about" }}
-        <div class="content">
-            {{ .Content }}
+    <h1 class="title">hello</h1>
+    <p>I am Deepak Sharda , FPGA Developer by profession and hardware hacker by passion know more about me in the about section. </p>
+    <p>Thank You </p>
+    <h2 class="title">Latest blog posts</h2>
+    {{ range where site.RegularPages "Section" "blog" | first 10 }}
+    <div class="article{{ if gt .Date.Unix now.Unix }} future-post{{ end }}">
+        <h2 class="text-size-normal"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+        <div class="info">
+            {{ partial "svg/calendar-event.svg" (dict "size" 24) }}
+            <span>{{ time.Format "January 2, 2006" .Date }}</span>
         </div>
+    </div>
     {{ end }}
 </div>
 {{ end }}
-
