@@ -10,11 +10,11 @@ Right now, I’m affiliated with [Vicharak](https://vicharak.in/) Computers as a
 
 * Gati ML Accelerator – a general-purpose FPGA-based machine learning accelerator
 
-* [Shrike](https://github.com/vicharak-in/shrike_fpga) – a small, open-source FPGA development board
+* [Shrike](https://github.com/vicharak-in/shrike-lite) – a small, open-source FPGA development board
 
-Outside of work, I spend time tinkering with different kinds of hardware and occasionally writing blogs to share my experiments and learnings.I post on twitter about it everything tho.
+Outside of work, I spend time tinkering with different kinds of hardware and occasionally writing blogs to share my experiments and learnings. I do post on twitter as well.
 
-- E-Mail: <a target="_blank" href="mailto:dshardan007+lut4@gmail.com">dshardan007[at]gmail[dot]com</a>
+- E-Mail: <a target="_blank" href="mailto:dpk@lut4.com">dpk[at]lut4[dot]com</a>
 - Twitter: <a target="_blank" href="https://x.com/deeempak">https://x.com/deeempak</a>
 - Linkedin: <a target="_blank" href="https://www.linkedin.com/in/deepak-sharda/">linkedin.com/deepak-sharda/</a>
 - Github: <a target="_blank" href="https://github.com/dpks2003">github.com/dpks2003</a>
