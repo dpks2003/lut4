@@ -1,6 +1,6 @@
 +++
 title = 'Common Mistakes in FPGA ML Accelerator Design'
-date = 2026-04-09T12:34:47+05:30
+date = 2026-01-31T12:34:47+05:30
 draft = false
 +++
 
