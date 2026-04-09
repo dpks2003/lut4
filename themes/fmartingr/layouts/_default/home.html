@@ -1,17 +1,45 @@
 {{ define "main" }}
 <div class="home center">
-    <h1 class="title">hello</h1>
-    <p>I am Deepak Sharda , FPGA Developer by profession and by passion know more about me in the about section. </p>
-    <p>Thank You </p>
-    <h2 class="title">Latest blog posts</h2>
-    {{ range where site.RegularPages "Section" "blog" | first 10 }}
-    <div class="article{{ if gt .Date.Unix now.Unix }} future-post{{ end }}">
-        <h2 class="text-size-normal"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-        <div class="info">
-            {{ partial "svg/calendar-event.svg" (dict "size" 24) }}
-            <span>{{ time.Format "January 2, 2006" .Date }}</span>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1 class="title">Deepak Sharda</h1>
+        <p><strong>FPGA / ASIC / Systems Engineer</strong></p>
+
+        <p>
+            I design hardware systems — from RTL to system architecture.
+            Focused on ML acceleration, high-performance compute,
+            and hardware-software co-design.
+        </p>
+    </section>
+
+    <!-- MINIMAL NAV -->
+    <section class="home-nav">
+        <p>
+            <a href="/projects/">Projects</a> /
+            <a href="/blog/">Blog</a> /
+            <a href="/notes/">Notes</a> /
+            <a href="/now/">Now</a>
+        </p>
+    </section>
+
+    <!-- LATEST POSTS ONLY -->
+    <section class="home-section">
+        <h2 class="title">Latest</h2>
+
+        {{ range where site.RegularPages "Section" "blog" | first 5 }}
+        <div class="article{{ if gt .Date.Unix now.Unix }} future-post{{ end }}">
+            <h2 class="text-size-normal">
+                <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+            </h2>
+
+            <div class="info">
+                {{ partial "svg/calendar-event.svg" (dict "size" 18) }}
+                <span>{{ time.Format "January 2, 2006" .Date }}</span>
+            </div>
         </div>
-    </div>
-    {{ end }}
+        {{ end }}
+    </section>
+
 </div>
 {{ end }}
