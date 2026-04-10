@@ -2,8 +2,6 @@
 title = "now"
 +++
 
-# Now
-
 *Last updated: 09 April 2026*
 
 ## What I'm Working On
@@ -25,16 +23,18 @@ Other then that I am maintainer and contributor for Shrike and Shrike-Lite board
 I also recently spent time debugging LPDDR4x memory interface issues on a TI180J484 FPGA board — the kind of deep hardware bring-up work I find most satisfying. Its working now.
 
 
-## Personal but not much.
+## Personal (but not much).
 
-I have been trying to get my health in check (I wont say i am unhealthy but bit underweight),manage by money a bit better , get proper sleep and debating about should i buy a 3D printer or a oscilloscope. 
+I have been trying to get my health in check (i would not say i am unhealthy but a bit underweight),manage by money better , get proper sleep and debating about should i buy a 3D printer or a oscilloscope. 
 
-Also goal is to make this web space the digital image of me.
+Also keeping a goal is to make this web space , digital image of me.
 
 
 ## What I'm Reading & Exploring
 
-I read broadly — technical and non-technical. I draw, write, and game when I can. 
+I have came across a compilation of travel blog from the blogger around a world and i am going throught it when ever I can linked [here](https://guide.world/).
+
+Other then that I am solving puzzels from [Puzzle-Ninja](https://www.goodreads.com/book/show/35186898-puzzle-ninja).
 
 ## Where
 
@@ -42,7 +42,7 @@ Based in Surat,India. Building chips.
 
 ## Unrelated 
 
-I have recently bought Claude Pro subscription so I am testing it out to see if its worth it to continue a subcription or not.
+I have recently bought Claude.ai(Antropic) Pro subscription so I am testing it out to see if its worth it to continue a subcription or not.
 
 ---
 
